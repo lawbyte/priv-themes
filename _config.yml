@@ -1,5 +1,4 @@
 # main menu navigation url and icon
-# 配置菜单导航的名称、路径和图标icon.
 menu:
   Home:
     url: /
@@ -22,7 +21,6 @@ menu:
   Partners:
     url: /partners
     icon: fas fa-address-book
-  # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
   #  children:
@@ -40,15 +38,14 @@ menu:
   #      icon: fas fa-image
 
 # Website start time.
-# 站点运行开始时间.
 time:
   enable: false
-  year: 2020 # 年份
-  month: 02 # 月份
-  date: 19 # 日期
-  hour: 00 # 小时
-  minute: 00 # 分钟
-  second: 00 # 秒
+  year: 2020 # year
+  month: 02 # month
+  date: 19 # date
+  hour: 00 # hour
+  minute: 00 # minute
+  second: 00 # second
 
 # Search page
 # npm install hexo-generator-search --save
@@ -78,18 +75,16 @@ feed:
   order_by: -date
 
 # Index cover carousel configuration.
-# 首页封面轮播图的相关配置.
 cover:
-  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
-  showIndicators: true # 是否显示指示器. # Whether to display the indicators
-  autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
-  duration: 120 # 切换延迟时间. Switching delay time.
-  intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
-  useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
+  showPrevNext: true # Whether to display the left and right toggle buttons.
+  showIndicators: true # # Whether to display the indicators
+  autoLoop: true # Whether it is automatically rotated.
+  duration: 120 # Switching delay time.
+  intervalTime: 5000 # Automatically switch the interval of the next one.
+  useConfig: false # Whether to use a configuration file, configure the recommended article under _data/covers.json, false to use the theme's configuration in the article cover coverImg
+  # useConfig usage: move the theme hexo-theme-matery /source/_data/covers.json to my-blog/source/_data/ to modify the configuration
 
 # index page dream text,
-# 配置首页显示"梦想"的语句.
 dream:
   enable: true
   showTitle: true
@@ -97,7 +92,6 @@ dream:
   text: Website ini membahas banyak masalah tentang apapun yang berkaitan dengan ilmu IT, mulai dari Tutorial jaringan, Hacking, Security, Pemrograman, Dan berita-berita terbaru tentang keadaan IT di indonesia atau di luar negeri.
 
 # Whether to display the musics.
-# 是否在首页显示音乐.
 music:
   enable: true
   title: #All Music
@@ -106,44 +100,41 @@ music:
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist	#require song, playlist, album, search, artist
   id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
+  fixed: true       # Turn on bottom suction mode
+  autoplay: false   # Whether to play automatically
   theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'list'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
+  loop: 'all'       # Audio loop playback, optional values: 'all', 'one', 'none'
+  order: 'list'   # Audio loop order, optional values: 'list', 'random'
+  preload: 'auto'   # Preloaded, optional value: 'none', 'metadata', 'auto'
+  volume: 0.7       # The default volume, please note that the player will remember the user settings, the default volume will be invalid after the user manually sets the volume
+  listFolded: true  # List collapsed by default
 
 # Whether to display the videos.
-# 是否在首页显示视频.
 video:
   enable: true
   showTitle: true
   title: Pemalang City
-  url:  /medias/video/pemalang.mp4 # 必填
+  url:  /medias/video/pemalang.mp4 # Required
   pic:
   thumbnails:
-  height: # 如：400
-  autoplay: false # 是否自动播放
+  height: # Such as：400
+  autoplay: false # Whether to play automatically
   theme: '#42b983'
-  loop: false # 是否循环播放
-  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
+  loop: false # Whether to loop
+  preload: 'auto' # Preloaded, optional value: 'none', 'metadata', 'auto'
   volume: 0.7
 
 # Whether to display the title of the recommended posts
-# 是否显示推荐文章的标题
 recommend:
   showTitle: true
   
 # Configure website favicon and LOGO
-# 配置网站favicon和网站LOGO
 favicon: /favicon.png
 logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
-# 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
+# The configuration of the second button in the home banner, including the display name of the button, the font awesome icon and the hyperlink of the button.
 indexbtn:
   enable: true
   name: Github
@@ -152,7 +143,7 @@ indexbtn:
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
-# 首页 banner 中的第二行个人信息配置，留空即不启用
+# The second line of personal information configuration in the home banner, leave blank to disable
 socialLink:
   github:  https://github.com/noxlaw
   email: islahelanggi10@gmail.com
@@ -166,22 +157,22 @@ socialLink:
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
-# 是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型，这是全局配置。
-# 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
+# Whether to activate the article TOC function and configure which title types the TOC supports are selected. This is a global configuration.
+# You can add `toc: false` to the front-matter of an article to make the article off the TOC directory function
 toc:
   enable: true
   heading: h2, h3, h4
-  collapseDepth: 0 # 目录默认展开层级
-  showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
+  collapseDepth: 0 # Directory default expansion level
+  showToggleBtn: true # Whether to display the button to switch the expansion and contraction of the TOC directory
 
 # 代码块相关
 code:
-  lang: true # 代码块是否显示名称
-  copy: true # 代码块是否可复制
-  shrink: true # 代码块是否可以收缩
-  break: false # 代码是否折行
+  lang: true # Whether the code block displays the name
+  copy: true # Whether the code block can be copied
+  shrink: true # Whether the code block can shrink
+  break: false # Whether the code breaks
 
-# 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
+# Whether to activate the reward function at the end of the article, which is activated by default (you can replace it with your own WeChat, Alipay QR code image, or use a network image).
 reward:
   enable: true
   title: Silahkan hubungi saya lewat QR-Code di bawah ini
@@ -191,17 +182,17 @@ reward:
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
-# 是否激活复制文章时追加博客和作者的版权信息.
+# Whether to activate the copyright information of blogs and authors when copying articles.
 copyright:
   enable: false
-  minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
+  minCharNumber: 120 # Add copyright information at least as many characters are copied.
   description: 
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
 # Considering that the mathjax loading is time consuming,
 # you also need to add `mathjax: true` to the Front-matter of the post that needs to be rendered.
-# 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
-# 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
+# Whether to activate the mathjax mathematical formula, this is a global configuration, but the article will not always turn on mathjax rendering,
+# Considering that mathjax is time-consuming to load, you also need to add `mathjax: true` to the Front-matter of the article to be rendered.
 mathjax:
   enable: false
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
@@ -209,23 +200,21 @@ mathjax:
 # Post word count, reading duration, site total word count.
 # Before you activate, please confirm that you have installed the hexo-wordcount plugin,
 # install the plugin command: `npm i --save hexo-wordcount`.
-# 文章字数统计、阅读时长、总字数统计等
-# 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
+# Article word count, reading time, total word count, etc.
+# Article information--To open the word count of the article, you need to install the hexo-wordcount plugin, the installation command: `npm i --save hexo-wordcount`
 postInfo:
-  date: true # 发布日期
-  update: true # 更新日期
-  wordCount: true # 文章字数统计
-  totalCount: true # 站点总文章字数
-  min2read: true # 文章阅读时长
-  readCount: true # 文章阅读次数
+  date: true # release date
+  update: true # update date
+  wordCount: true # Article word count
+  totalCount: true # The total number of articles in the site
+  min2read: true # Article reading time
+  readCount: true # Article reading times
 
 # Whether to activate the 'love' effect of clicking on the page.
-# 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
   enable: true
 
 # profile in about page, including avatars, career, and personal introductions.
-# 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
   career: Website Developer
@@ -233,7 +222,7 @@ profile:
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
-# 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+# Configure the "My Project" information on the "About" page. If you do not need this information, you can set it to inactive or delete it.
 myProjects:
   enable: true
   data:
@@ -255,7 +244,7 @@ myProjects:
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
-# 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+# Configure the "My Skills" information on the "About" page. If you do not need this information, you can set it to inactive or delete it.
 mySkills:
   enable: true
   data:
@@ -280,7 +269,7 @@ mySkills:
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
-# 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+# Configure the "My Album" picture on the "About" page. If you do not need this information, you can set it to inactive or delete it.
 myGallery:
   enable: true
   data:
@@ -310,11 +299,11 @@ myGallery:
     - /medias/featureimages/23.jpg
 
 # Whether to display post-calender in the `archive` page
-# 设置在归档页面中是否显示'文章日历'控件
+# Set whether to display the 'article calendar' control in the archive page
 postCalendar: true
 
 # the Gitalk config，default disabled
-# Gitalk 评论模块的配置，默认为不激活
+# Gitalk comment module configuration, default is not activated
 gitalk:
   enable: false
   owner: noxlaw
@@ -326,7 +315,6 @@ gitalk:
     - noxlaw
 
 # the Gitment config，default disabled
-# Gitment 评论模块的配置，默认为不激活
 gitment:
   enable: false
   owner:
@@ -336,20 +324,17 @@ gitment:
     clientSecret:
 
 # disqus config, default disabled
-# Disqus评论模块的配置，默认为不激活
 disqus:
   enable: true
   shortname: noxlaw
 
 # Livere comment configuration, the default is not activated
-# Livere 来必力评论模块的配置，默认为不激活
 livere:
   enable: false
   uid:
 
 # The configuration of the Valine comment module is not activated by default.
-# To use it, activate the configuration item and set appId and appKey.
-# Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
+# To use it, activate the configuration item and set appId and appKey.# Valine comment module configuration, the default is not activated, if you want to use, please activate the configuration item, and set appId and appKey.
 valine:
   enable: false
   appId:
@@ -363,7 +348,7 @@ valine:
   background: /medias/comment_bg.png
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
-# 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
+# Configure whether to display the fork me on github icon in the header, the default is true, you can modify it to your warehouse address.
 githubLink:
   enable: true
   url: https://github.com/noxlaw
@@ -373,38 +358,34 @@ githubLink:
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
 # Note: In order to ensure that the original password will not be leaked to the web page,
 # the password of the article must be encrypted by 'SHA256' so that it will not be cracked.
-# 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
-# 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
+# Read the password verification function of the article. If you want to use this function, please activate this configuration item, and write the key of 'password' and the encrypted ciphertext in the Front-matter of the corresponding article.
+# Please note: In order to ensure that the original password will not be leaked to the web page, the password of the article must be encrypted by 'SHA256' so that it will not be cracked.
 verifyPassword:
   enable: false
-  promptMessage: 请输入访问本文章的密码
-  errorMessage: 密码错误，将返回主页！
+  promptMessage: Please enter the password to access this article
+  errorMessage: wrong password, will return to the homepage!
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
-# 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
   enable: true
-  totalTraffic: true # 总访问量
-  totalNumberOfvisitors: true # 总人次
+  totalTraffic: true # Total visits
+  totalNumberOfvisitors: true # Total visits
 
 # Add google analytics configuration
-# 添加 Google Analytics 配置
 googleAnalytics:
   enable: false
   id:
 
 # Add baidu analytics configuration
-# 添加 baidu Analytics 配置
 baiduAnalytics:
   enable: false
   id:
 
-# 百度搜索资源平台提交链接
+# Baidu search resource platform submit link
 baiduPush: true
 
 # The used front-end library can be replaced with the corresponding CDN address as needed,
-# If the specific version is not specified below, you can use the latest version.
-# 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
+# If the specific version is not specified below, you can use the latest version.# The used front-end library can be replaced with the corresponding CDN address as needed. If the specific version number is not specified below, use the latest version.
 libs:
   css:
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
@@ -431,7 +412,7 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    valine: /libs/valine/Valine.min.js# If you want to keep the latest version, please replace with https://unpkg.com/valine/dist/Valine.min.js  The default is /libs/valine/Valine.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
@@ -441,7 +422,6 @@ libs:
     instantpage: /libs/instantpage/instantpage.js
 
 # The post featured images that needs to be displayed when there is no image.
-# 无文章特色图片时需要显示的文章特色图片.
 featureImages:
 - /medias/featureimages/0.jpg
 - /medias/featureimages/1.jpg
@@ -469,26 +449,25 @@ featureImages:
 - /medias/featureimages/23.jpg
 
 # default configs that the default policy for every articles/posts
-# default 配置文章的默认转载规则
 
 # you can define reprint policy for a single article in the front-matter of the specific md file using this key: reprintPolicy
-# 您可以使用在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则
+# You can use the reprintPolicy in the front-matter of the article md file to configure the reprint rules for a single article
 
-# 可用的转载规则有（available reprint policies are）：
-# 这些转载规则的意义请参考(you can refer to this link FMI)：https://creativecommons.org/choose/?lang=zh
-# cc_by（知识共享署名 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-# cc_by_nd（知识共享署名-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-# cc_by_sa（知识共享署名-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-ShareAlike 4.0 International License）
-# cc_by_nc（知识共享署名-非商业性使用 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-# cc_by_nc_nd（知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License）
-# cc_by_nc_sa（知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License）
- 
-# cc0（CC0 1.0 通用 (CC0 1.0) 公共领域贡献 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication） https://creativecommons.org/publicdomain/zero/1.0/deed.zh
+# Available reprint policies are (available reprint policies are):
+# Please refer to the meaning of these reprinting rules (you can refer to this link FMI): https://creativecommons.org/choose/?lang=zh
+# cc_by (Creative Commons Attribution-NoDerivatives 4.0 International License Creative Commons Attribution-NoDerivatives 4.0 International License)
+# cc_by_nd (Creative Commons Attribution-NoDerivatives 4.0 International License Creative Commons Attribution-NoDerivatives 4.0 International License)
+# cc_by_sa (Creative Commons Attribution-ShareAlike 4.0 International License Creative Commons Attribution-ShareAlike 4.0 International License)
+# cc_by_nc (Creative Commons Attribution-NoDerivatives 4.0 International License)
+# cc_by_nc_nd (Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License)
+# cc_by_nc_sa (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License)
 
-# noreprint（不允许转载 not allowed to reprint）
-# pay（付费转载 pay for reprinting）
+# cc0 (CC0 1.0 Universal (CC0 1.0) Public Domain Contribution CC0 1.0 Universal (CC0 1.0) Public Domain Dedication) https://creativecommons.org/publicdomain/zero/1.0/deed.zh
+
+# noreprint (not allowed to reprint)
+# pay (pay for reprinting)
 reprint:
-  enable: true # whether enable reprint section 是否启用“转载规则限定模块”
+  enable: true # whether enable reprint section Whether to enable the "Reprint Rule Restriction Module"
   default: cc_by
 
 # DaoVoice online contact
@@ -501,77 +480,76 @@ tidio:
   enable: false
   public_key:
 
-#背景canvas-nest
+# Backgroundcanvas-nest
 canvas_nest:
-  enable: false
-  color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
-  pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
-  opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
-  zIndex: -1 # 背景的 z-index 属性，css 属性用于控制所在层的位置, 默认: -1.
-  count: 99 # 线条的总数量, 默认: 99
+  enable: false
+  color: 0,0,255 # line color, default: '0,0,0'; the three numbers are (R, G, B), pay attention to, split
+  pointColor: 0,0,255 # intersection color, default: '0,0,0'; the three numbers are (R, G, B), pay attention to, split
+  opacity: 0.7 # line transparency (0 ~ 1), default: 0.5
+  zIndex: -1 # The z-index property of the background, the css property is used to control the position of the layer, default: -1.
+  count: 99 # total number of lines, default: 99
 
-# 背景静止彩带.
+# Background static ribbon.
 ribbon:
-  enable: false
-  size: 150 # 彩带大小, 默认: 90.
-  alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
-  zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  clickChange: false  # 设置是否每次点击都更换彩带.
+  enable: false
+  size: 150 # Color ribbon size, default: 90.
+  alpha: 0.6 # Color band transparency (0 ~ 1), default: 0.6.
+  zIndex: -1 # The z-index property of the background, the css property is used to control the position of the layer, default: -1.
+  clickChange: false # Set whether to change the ribbon every time you click.
 
-# 背景动态彩带.
+# Background dynamic ribbon.
 ribbon_dynamic:
-  enable: false
-
-# sharejs文章分享模块.
-# 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
+  enable: false
+  
+# sharejs article sharing module.
+# Support order, optional items are twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
 sharejs:
   enable: true
   sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
 
-# addthis文章分享模块.
+# addthis article sharing module.
 addthis:
-  enable: false
-  pubid:  # 前往https://www.addthis.com/获取
+  enable: false
+  pubid: # Go to https://www.addthis.com/ to get
 
-# 打字效果副标题.
-# 如果有符号 ‘ ，请在 ’ 前面加上 \
+# Typing effect subtitle.
+# If there is a symbol ‘, please add \ in front of
 subtitle:
-  enable: true
-  loop: true # 是否循环
-  showCursor: true # 是否显示光标
-  startDelay: 300 # 开始延迟
-  typeSpeed: 100 # 打字速度
-  backSpeed: 50 # 删除速度
+  enable: true
+  loop: true # Whether to loop
+  showCursor: true # Whether to show the cursor
+  startDelay: 300 # Start delay
+  typeSpeed: 100 # typing speed
+  backSpeed: 50 # delete speed
   sub1: Just god can stop me!
   sub2: Never really desperate, only the lost of the soul
 
-# 手机二级菜单.
+# Mobile secondary menu.
 navMenu:
-  mleft: false # 二级侧栏子菜单是否对齐左边
-  bgColor: " " # 二级侧栏子菜单背景颜色,留空即为全局背景色
+  mleft: false # Whether the secondary sidebar submenu is aligned to the left
+  bgColor: "" # Secondary sidebar submenu background color, leave blank to be global background color
 
-# 网页预加载.
+# Webpage preloading.
 instantpage:
-  enable: true
+  enable: true
 
-# banner 是否每日切换.
-# 若为 false, 则 banner 默认为 /medias/banner/0.jpg
+# banner Whether to switch daily.
+# If false, the default banner is /medias/banner/0.jpg
 banner:
-  enable: true
+  enable: true
 
-#ICP备案信息尾部显示
+#ICP record information tail display
 icp:
-  enable: false
-  url: # 备案链接
-  text: # 备案信息
+  enable: false
+  url: # Record link
+  text: # Record information
 
-# CDN访问加速 
-# 第一次使用本功能，一定要先配置url，再`hexo cl&&hexo g&&hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
-# 如果必须要使用国内的coding或者gittee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
-# URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
-# 如果想关闭此功能，将 url地址 注释或删除即可！
-#
-# 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
-# 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
+# CDN access acceleration
+# The first time you use this feature, you must first configure the url, and then `hexo cl && hexo g && hexo d` is deployed to the GitHub repository, pay attention! Must be a GitHub repository!
+# If you must use domestic coding or gittee, you can use dual deployment and deploy the website to two warehouses (one of which must be a GitHub warehouse)
+# URL configuration rules (examples are as follows): https://cdn.jsdelivr.net/gh/your GitHub username/your warehouse name
+# If you want to turn off this function, just comment or delete the url address!
+##
+# Note: When this item is configured, it means that when local debugging, the website will still go to GitHub to request resources (the original resource). Remember to comment or delete this configuration when local debugging
 jsDelivr:
-  url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
+  url: 
